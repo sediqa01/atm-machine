@@ -43,7 +43,7 @@ while count <= 3:
                 break
             else:
                 count += 1
-                print('Invalid PIN!!')
+                print('\n\n     Invalid PIN!!')
                 print()
 
         if user == 'hadid':
@@ -51,7 +51,7 @@ while count <= 3:
                 break
             else:
                 count += 1
-                print('Invalid PIN!!')
+                print('\n\n     Invalid PIN!!')
                 print()
 
         if user == 'sadat':
@@ -59,8 +59,17 @@ while count <= 3:
                 break
             else:
                 count += 1
-                print('Invalid PIN!!')
+                print('\n\n     Invalid PIN!!')
                 print()         
     else:
-        print('PIN Consists of 4 Digits')
+        print('\n     PIN must Consists of 4 Digits.\n')
         count += 1
+
+# in case of a valid pin- continuing, or exiting
+    if count == 3:
+        print('\n3 Unsuccesful PIN Attempts, EXITING')
+        print('Your Card has been LOCKED!!\n')
+        exit()
+
+print('Login Succesful, CONTINUE\n')
+print(str.capitalize(users[n]), 'Welcome to ATM!')
