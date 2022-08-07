@@ -33,3 +33,34 @@ while True:
     else:
         print('\n\n     Invalid Username!!')
 
+# comparing pin
+while count <= 3:
+    pin = input('Please Enter Your PIN: ')
+
+    if pin.isdigit():
+        if user == 'sediqa':
+            if pin == pins[0]:
+                break
+            else:
+                count += 1
+                print('Invalid PIN!!')
+                print()
+
+        if user == 'hadid':
+            if pin == pins[1]:
+                break
+            else:
+                count += 1
+                print('Invalid PIN!!')
+                print()
+
+        if user == 'sadat':
+            if pin == pins[2]:
+                break
+            else:
+                count += 1
+                print('Invalid PIN!!')
+                print()         
+    else:
+        print('PIN Consists of 4 Digits')
+        count += 1
