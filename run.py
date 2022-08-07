@@ -1,5 +1,6 @@
 # imprt libraries
 import time
+import string
 
 print("\n\nPlease Insert Your Card!\n\n")
 time.sleep(2)
@@ -65,7 +66,7 @@ while count <= 3:
         print('\n     PIN must Consists of 4 Digits.\n')
         count += 1
 
-# in case of a valid pin- continuing, or exiting
+# in case of a valid pin continuing or exiting
     if count == 3:
         print('\n3 Unsuccesful PIN Attempts, EXITING')
         print('Your Card has been LOCKED!!\n')
@@ -73,3 +74,26 @@ while count <= 3:
 
 print('Login Succesful, CONTINUE\n')
 print(str.capitalize(users[n]), 'Welcome to ATM!')
+
+
+# Main menu
+while True:
+
+    response = input("""
+        Select From Following Options: 
+        1. Statement__(S) 
+        2. Withdraw__(W) 
+        3. Lodgement__(L) 
+        4. Quit__(Q)
+        \nType The Letter of Your Choices: """).lower()
+
+    valid_responses = ['s', 'w', 'l', 'p', 'q']
+    response = response.lower()
+
+    if response == 's':
+        print()
+        print(str.capitalize(users[n]), 'You have ',
+              amounts[n], '$ on Your Account.\n')
+    else:
+
+        print('Response not Valid')
