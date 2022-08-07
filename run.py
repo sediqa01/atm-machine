@@ -85,7 +85,7 @@ while True:
         2. Withdraw__(W) 
         3. Lodgement__(L) 
         4. Quit__(Q)
-        \nType The Letter of Your Choices: """).lower()
+        \nType the Letter of Your Choices: """).lower()
 
     valid_responses = ['s', 'w', 'l', 'p', 'q']
     response = response.lower()
@@ -94,6 +94,18 @@ while True:
         print()
         print(str.capitalize(users[n]), 'You have ',
               amounts[n], '$ on Your Account.\n')
+
+    elif response == 'w':
+        cash_out = int(input('Enter Amount you Would Like to Withdraw: '))
+
+        if cash_out > amounts[n]:
+            print('\nYou have entered INSUFFICIENT Balance')
+        else:
+            amounts[n] = amounts[n] - cash_out
+            print()
+            print(f"{cash_out} Dollars successfully widthdrawn! ")
+            print('Your Remaining Balance is', amounts[n], '$')
+
     else:
 
         print('Response not Valid')
