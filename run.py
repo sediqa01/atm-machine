@@ -106,6 +106,19 @@ while True:
             print(f"{cash_out} Dollars successfully widthdrawn! ")
             print('Your Remaining Balance is', amounts[n], '$')
 
+    elif response == 'l':
+        cash_in = int(input('\n\nEnter Amount you want to Lodge: '))
+        print()
+
+        if cash_in <= 10:
+            print('Amount You Want to Lodge must be more 10$ ')
+        else:
+            amounts[n] = amounts[n] + cash_in
+            print('Your new Balance is: ', amounts[n], '$')
+
+    elif response == 'q':
+        exit()
+
     else:
 
         print('Response not Valid')
