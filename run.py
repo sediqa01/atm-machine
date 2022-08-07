@@ -1,3 +1,11 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# imprt libraries
+import time
+
+print("\n\nPlease Insert Your Card!\n\n")
+time.sleep(2)
+
+print("**********************************************")
+print("*                                            *")
+print("*            Welcome to ATM SYSTEM           *")
+print("*                                            *")
+print("**********************************************")
