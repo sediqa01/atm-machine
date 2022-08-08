@@ -1,7 +1,7 @@
 # imprt libraries
 import time
 import string
-
+import os
 print("\n\nPlease Insert Your Card!\n\n")
 time.sleep(2)
 
@@ -71,6 +71,8 @@ while count <= 3:
         print('\n3 Unsuccesful PIN Attempts, EXITING')
         print('Your Card has been LOCKED!!\n')
         exit()
+
+os.system('clear')
 
 print('Login Succesful, CONTINUE\n')
 print(str.capitalize(users[n]), 'Welcome to ATM!')
