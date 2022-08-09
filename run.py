@@ -2,14 +2,16 @@
 import time
 import string
 import os
+import pyfiglet
+
+
 print("\n\nPlease Insert Your Card!\n\n")
 time.sleep(2)
 
-print("**********************************************")
-print("*                                            *")
-print("*            Welcome to ATM SYSTEM           *")
-print("*                                            *")
-print("**********************************************")
+header = pyfiglet.figlet_format("ATM SYSTEM",
+                                justify="center")
+print(header)
+
 
 # Creating lists of users, their PINs and bank statements.
 users = ['sediqa', 'hadid', 'sadat']
@@ -74,7 +76,6 @@ while count <= 3:
 
 os.system('clear')
 
-print('Login Succesful, CONTINUE\n')
 print(str.capitalize(users[n]), 'Welcome to ATM!')
 
 
@@ -124,3 +125,4 @@ while True:
     else:
 
         print('Response not Valid')
+
