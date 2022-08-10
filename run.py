@@ -86,6 +86,7 @@ def display_balance():
     Disply the user's A/C Balance
     """
     global amounts
+    print()
     print(str.capitalize(users[n]), 'You have ',
                                     amounts[n], '$ on Your Account.\n')
 
@@ -97,12 +98,24 @@ def cash_withdraw(withdrawal_amount):
     global amounts
 
     if withdrawal_amount > amounts[n]:
-        print('\nYou have entered INSUFFICIENT Balance')
+        print('\nThe Amount is not AVAILABLE!')
     else:
         amounts[n] = amounts[n] - withdrawal_amount
-        print()
         print(f"{withdrawal_amount} Dollars successfully widthdrawn! ")
         print('Your Remaining Balance is', amounts[n], '$')
+
+
+def cash_deposit(deposit_amount):
+    """
+    deposit_amount
+    """
+    global amounts
+
+    if deposit_amount <= 10:
+        print('The Amount You Want to Deposit must be more than 10$ ')
+    else:
+        amounts[n] = amounts[n] + deposit_amount
+        print('Your new Balance is: ', amounts[n], '$')
 
 
 response = None
@@ -125,10 +138,13 @@ while True:
         display_balance()
 
     elif response == 'w':
-        amount = int(input("Enter Withdrawal Amount: "))
+        amount = int(input("\n\nEnter Withdrawal Amount: "))
         cash_withdraw(amount)
 
+    elif response == 'd':
+        amount = int(input("\n\nEnter Deposit Amount: "))
+        cash_deposit(amount)
     else:
 
-        print('Response not Valid')
+        print('Response not Valid!')
 
