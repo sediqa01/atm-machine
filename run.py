@@ -8,7 +8,7 @@ import pyfiglet
 print("\n\nPlease Insert Your Card!\n\n")
 time.sleep(2)
 
-
+# ATM (Automated Teller Machine)
 header = pyfiglet.figlet_format(" Wlecome to ATM ")
 print(header)
 
@@ -118,6 +118,13 @@ def cash_deposit(deposit_amount):
         print('Your new Balance is: ', amounts[n], '$')
 
 
+def exit_system():
+    """
+    Exit System
+    """
+    exit()
+
+
 response = None
 amount = None
 
@@ -128,23 +135,25 @@ while True:
         1. Check A/C Balance (B)
         2. Cash Withdraw (W)
         3. Cash Deposit (D)
-        4. Quit__(Q)
+        4. Exit (E)
         \nType the Letter of Your Choices: """).lower()
 
-    valid_responses = ['b', 'w', 'd', 'p', 'q']
+    valid_responses = ['b', 'w', 'd', 'e']
     response = response.lower()
 
     if response == 'b':
         display_balance()
 
     elif response == 'w':
-        amount = int(input("\n\nEnter Withdrawal Amount: "))
+        amount = int(input("Enter Withdrawal Amount: "))
         cash_withdraw(amount)
 
     elif response == 'd':
-        amount = int(input("\n\nEnter Deposit Amount: "))
+        amount = int(input("Enter Deposit Amount: "))
         cash_deposit(amount)
+
+    elif response == 'e':
+        exit_system()
+
     else:
-
-        print('Response not Valid!')
-
+        print('Response is not Valid!')
