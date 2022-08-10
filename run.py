@@ -8,8 +8,8 @@ import pyfiglet
 print("\n\nPlease Insert Your Card!\n\n")
 time.sleep(2)
 
-header = pyfiglet.figlet_format("ATM SYSTEM",
-                                justify="center")
+
+header = pyfiglet.figlet_format(" Wlecome to ATM ")
 print(header)
 
 
@@ -80,47 +80,53 @@ print(str.capitalize(users[n]), 'Welcome to ATM!')
 
 
 # Main menu
+
+def display_balance():  
+    """
+    Disply the user's A/C Balance
+    """
+    global amounts
+    print(str.capitalize(users[n]), 'You have ',
+                                    amounts[n], '$ on Your Account.\n')
+
+
+def cash_withdraw(withdrawal_amount):
+    """
+    cash_withdraw
+    """
+    global amounts
+
+    if withdrawal_amount > amounts[n]:
+        print('\nYou have entered INSUFFICIENT Balance')
+    else:
+        amounts[n] = amounts[n] - withdrawal_amount
+        print()
+        print(f"{withdrawal_amount} Dollars successfully widthdrawn! ")
+        print('Your Remaining Balance is', amounts[n], '$')
+
+
+response = None
+amount = None
+
 while True:
 
     response = input("""
         Select From Following Options: 
-        1. Statement__(S) 
-        2. Withdraw__(W) 
-        3. Lodgement__(L) 
+        1. Check A/C Balance (B)
+        2. Cash Withdraw (W)
+        3. Cash Deposit (D)
         4. Quit__(Q)
         \nType the Letter of Your Choices: """).lower()
 
-    valid_responses = ['s', 'w', 'l', 'p', 'q']
+    valid_responses = ['b', 'w', 'd', 'p', 'q']
     response = response.lower()
 
-    if response == 's':
-        print()
-        print(str.capitalize(users[n]), 'You have ',
-              amounts[n], '$ on Your Account.\n')
+    if response == 'b':
+        display_balance()
 
     elif response == 'w':
-        cash_out = int(input('Enter Amount you Would Like to Withdraw: '))
-
-        if cash_out > amounts[n]:
-            print('\nYou have entered INSUFFICIENT Balance')
-        else:
-            amounts[n] = amounts[n] - cash_out
-            print()
-            print(f"{cash_out} Dollars successfully widthdrawn! ")
-            print('Your Remaining Balance is', amounts[n], '$')
-
-    elif response == 'l':
-        cash_in = int(input('\n\nEnter Amount you want to Lodge: '))
-        print()
-
-        if cash_in <= 10:
-            print('Amount You Want to Lodge must be more 10$ ')
-        else:
-            amounts[n] = amounts[n] + cash_in
-            print('Your new Balance is: ', amounts[n], '$')
-
-    elif response == 'q':
-        exit()
+        amount = int(input("Enter Withdrawal Amount: "))
+        cash_withdraw(amount)
 
     else:
 
