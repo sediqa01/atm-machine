@@ -63,7 +63,7 @@ while count <= 3:
             else:
                 count += 1
                 print('\n\n     Invalid PIN!!')
-                print()         
+                print()
     else:
         print('\n     PIN must Consists of 4 Digits.\n')
         count += 1
@@ -81,7 +81,7 @@ print(str.capitalize(users[n]), 'Welcome to ATM!')
 
 # Main menu
 
-def display_balance():  
+def display_balance():
     """
     Disply the user's A/C Balance
     """
@@ -117,7 +117,6 @@ def cash_deposit(deposit_amount):
         print('\n\n The Amount You Want to Deposit must be more than 10$ ')
     else:
         amounts[n] = amounts[n] + deposit_amount
-        
         print('\n\nYour new Balance is: ', amounts[n], '$')
 
 
@@ -135,21 +134,19 @@ while True:
 
     try:
         response = input("""
-            Select From Following Options: 
+            Select From Following Options:
             1. Check A/C Balance (B)
             2. Cash Withdraw (W)
             3. Cash Deposit (D)
             4. Exit (E)
             \nType the Letter of Your Choices: """).lower()
 
-        valid_responses = ['b', 'w', 'd', 'e']
         response = response.lower()
 
         if response == 'b':
             display_balance()
 
         elif response == 'w':
- 
             try:
                 amount = int(input("Enter Withdrawal Amount: "))
             except ValueError:
@@ -167,7 +164,6 @@ while True:
 
         elif response == 'e':
             exit_system()
-        
         else:
             raise ValueError('\n\n     Response is not Valid!\n')
 
