@@ -101,6 +101,8 @@ def cash_withdraw(withdrawal_amount):
         print('\nThe Amount is not AVAILABLE!')
     else:
         amounts[n] = amounts[n] - withdrawal_amount
+        print()
+        print()
         print(f"{withdrawal_amount} Dollars successfully widthdrawn! ")
         print('Your Remaining Balance is', amounts[n], '$')
 
@@ -112,10 +114,11 @@ def cash_deposit(deposit_amount):
     global amounts
 
     if deposit_amount <= 10:
-        print('The Amount You Want to Deposit must be more than 10$ ')
+        print('\n\n The Amount You Want to Deposit must be more than 10$ ')
     else:
         amounts[n] = amounts[n] + deposit_amount
-        print('Your new Balance is: ', amounts[n], '$')
+        
+        print('\n\nYour new Balance is: ', amounts[n], '$')
 
 
 def exit_system():
@@ -146,18 +149,27 @@ while True:
             display_balance()
 
         elif response == 'w':
-            amount = int(input("Enter Withdrawal Amount: "))
-            cash_withdraw(amount)
+ 
+            try:
+                amount = int(input("Enter Withdrawal Amount: "))
+            except ValueError:
+                print("\n\nPlease Insert a valid Withdrawal Amount!\n\n")
+            else:
+                cash_withdraw(amount)
 
         elif response == 'd':
-            amount = int(input("Enter Deposit Amount: "))
-            cash_deposit(amount)
+            try:
+                amount = int(input("Enter Deposit Amount: "))
+            except ValueError:
+                print("\n\nPlease Insert a valid Deposit Amount!\n\n")
+            else:
+                cash_deposit(amount)
 
         elif response == 'e':
             exit_system()
         
         else:
-            raise ValueError('Response is not Valid!')
+            raise ValueError('\n\n     Response is not Valid!\n')
 
     except ValueError:
-        print('Response is not Valid!')
+        print('\n\n     Response is not Valid!\n')
