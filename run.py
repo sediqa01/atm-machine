@@ -5,11 +5,11 @@ import os
 import pyfiglet
 
 
-print("\n\nPlease Insert Your Card!\n\n")
+print("\n\nPlease Insert Your Card!\n\n\n")
 time.sleep(2)
 
 # ATM (Automated Teller Machine)
-header = pyfiglet.figlet_format(" Wlecome to ATM ")
+header = pyfiglet.figlet_format(" Wlecome  to ATM ")
 print(header)
 
 
