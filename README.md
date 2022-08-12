@@ -53,5 +53,12 @@ Steps for deployment:
 - Link the Heroku app to the respository.
 - Click on Deploy.
 
+## Credits
+
+- [Programiz](https://www.programiz.com/python-programming/exception-handling) - Help me to apply Exception Handling Using try - except statement.
+- [Learn Learn Scratch Tutorials](https://www.youtube.com/watch?v=U1aUteSg2a4&list=WL&index=2&t=415s) - This YouTube Channle help to learn how to use the **Pyfiglet** library to Converting text to Big ASCII Text using Pyfiglet.
+- []()
+
+
 
 
