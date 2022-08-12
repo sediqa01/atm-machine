@@ -23,6 +23,14 @@ I have tested this project by doing the following :
 ![Check Result](/readmefile/check2.PNG))
 
 
+## Language & Programs
+
+- **Github** - to store my repository.
+- **Gitpod** - to create my project files.
+- **python** - to write ATM program.
+- **Heroku** - to deploy to program.
+
+
 ## Python Libraries & Modules
 
 I used these python libraries :
@@ -31,8 +39,6 @@ I used these python libraries :
 - **OS** - to clear the login process after user login.
 - **Time** - to add the .sleep() function and delay my code in the terminal.
 - **String** - to capitalize the usernames.
-
-Sys - to exit the programme
 
 
 
