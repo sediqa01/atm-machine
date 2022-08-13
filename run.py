@@ -12,23 +12,28 @@ time.sleep(2)
 header = pyfiglet.figlet_format(" Wlecome  to ATM ")
 print(header)
 
+# Creating user's information for login
+"""
+The code for multi-user login was taken from this site [Source Code Hero]
+(https://sourcecodehero.com/atm-program-in-python-with-source-code/)
+"""
 
-# Creating lists of users, their PINs and bank statements.
-users = ['sediqa', 'hadid', 'sadat']
-pins = ['0001', '0002', '0003']
-amounts = [10000, 20000, 30000]
+usernames = ['sediqa', 'hadid', 'sadat', 'saida']
+passwords = ['0001', '0002', '0003', '0004']
+amounts = [10000, 20000, 30000, 4000]
 count = 0
 
 
-# while loop checks existance of the enterd username
+# Checks users' information for verifying account statements.
+
 while True:
     user = input('\nPlease Enter Your  Username: ')
     user = user.lower()
 
-    if user in users:
-        if user == users[0]:
+    if user in usernames:
+        if user == usernames[0]:
             n = 0
-        elif user == users[1]:
+        elif user == usernames[1]:
             n = 1
         else:
             n = 2
@@ -36,13 +41,13 @@ while True:
     else:
         print('\n\n     Invalid Username!!')
 
-# comparing pin
+# While loops will confirm the passwords to verify the user's login
 while count <= 3:
     pin = input('Please Enter Your PIN: ')
 
     if pin.isdigit():
         if user == 'sediqa':
-            if pin == pins[0]:
+            if pin == passwords[0]:
                 break
             else:
                 count += 1
@@ -50,7 +55,7 @@ while count <= 3:
                 print()
 
         if user == 'hadid':
-            if pin == pins[1]:
+            if pin == passwords[1]:
                 break
             else:
                 count += 1
@@ -58,7 +63,7 @@ while count <= 3:
                 print()
 
         if user == 'sadat':
-            if pin == pins[2]:
+            if pin == passwords[2]:
                 break
             else:
                 count += 1
@@ -68,32 +73,33 @@ while count <= 3:
         print('\n     PIN must Consists of 4 Digits.\n')
         count += 1
 
-# in case of a valid pin continuing or exiting
+# If a user types an invalid password three times , the program will exit.
     if count == 3:
         print('\n3 Unsuccesful PIN Attempts, EXITING')
-        print('Your Card has been LOCKED!!\n')
         exit()
 
 os.system('clear')
 
-print(str.capitalize(users[n]), 'Welcome to ATM!')
+print(str.capitalize(usernames[n]), 'Welcome to ATM!')
 
 
 # Main menu
 
 def display_balance():
     """
-    Disply the user's A/C Balance
+    This function will show the user's account balance.
     """
     global amounts
     print()
-    print(str.capitalize(users[n]), 'You have ',
-                                    amounts[n], '$ on Your Account.\n')
+    print(str.capitalize(usernames[n]), 'You have ',
+                                        amounts[n], '$ on Your Account.\n')
 
 
 def cash_withdraw(withdrawal_amount):
     """
-    cash_withdraw
+    This function will process the withdrawal cash amount
+    and check if the withdrawal amount was greater than the entered amount,
+    It will show a message that the entered amount is not valid.
     """
     global amounts
 
@@ -109,7 +115,9 @@ def cash_withdraw(withdrawal_amount):
 
 def cash_deposit(deposit_amount):
     """
-    deposit_amount
+    This function will process the deposit cash amount and
+    check if the deposit amount was less than 10$..
+    It will show a message that the deposit amount must be greater than 10$
     """
     global amounts
 
@@ -122,13 +130,14 @@ def cash_deposit(deposit_amount):
 
 def exit_system():
     """
-    Exit System
+    This function will show a Goodbye message and exit the system.
     """
     goodbye_message = pyfiglet.figlet_format('Thank You, Bye!')
     print(goodbye_message)
     exit()
 
 
+# The while loop will process the user's responses for transaction processing.
 response = None
 amount = None
 
@@ -161,9 +170,7 @@ while True:
                 print("\n\nPlease Insert a valid Deposit Amount!\n\n")
             else:
                 cash_deposit(amount)
-
         elif response == 4:
-            
             exit_system()
         else:
             raise ValueError('\n\n     Response is not Valid!\n')
