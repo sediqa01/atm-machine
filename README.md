@@ -40,22 +40,26 @@ I have tested this project by doing the following :
 
 ![Solved bug](/readmefile/solvedd.PNG)
 
+## Remaining Bugs
+    
+- No bugs remaining
+
 # Language & Programs
 
-- **Github** - to store my repository.
-- **Gitpod** - to create my project files.
-- **python** - to write ATM program.
-- **Heroku** - to deploy the program.
+- **Github** - To store my repository.
+- **Gitpod** - To create my project files.
+- **python** - To write ATM program.
+- **Heroku** - To deploy the program.
 
 
 # Python Libraries & Modules
 
 I used these python libraries :
 
-- **Pyfiglet** - to create a header.
+- **Pyfiglet** - To create a header & Goodbye Message.
 - **OS** - to clear the system after user login.
 - **Time** - To add the sleep() function to the delay the terminal for simulating Insert card.
-- **String** - to capitalize the usernames.
+- **String** - To capitalize the usernames.
 
 
 
