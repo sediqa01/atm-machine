@@ -28,7 +28,7 @@ I have tested this project by doing the following :
 - **Github** - to store my repository.
 - **Gitpod** - to create my project files.
 - **python** - to write ATM program.
-- **Heroku** - to deploy to program.
+- **Heroku** - to deploy the program.
 
 
 ## Python Libraries & Modules
@@ -36,8 +36,8 @@ I have tested this project by doing the following :
 I used these python libraries :
 
 - **Pyfiglet** - to create a header.
-- **OS** - to clear the login process after user login.
-- **Time** - to add the .sleep() function and delay my code in the terminal.
+- **OS** - to clear the system after user login.
+- **Time** - To add the sleep() function to the delay the terminal for simulating Insert card.
 - **String** - to capitalize the usernames.
 
 
@@ -55,9 +55,15 @@ Steps for deployment:
 
 ## Credits
 
-- [Programiz](https://www.programiz.com/python-programming/exception-handling) - Help me to apply Exception Handling Using try - except statement.
-- [Learn Learn Scratch Tutorials](https://www.youtube.com/watch?v=U1aUteSg2a4&list=WL&index=2&t=415s) - This YouTube Channle help to learn how to use the **Pyfiglet** library to Converting text to Big ASCII Text using Pyfiglet.
-- []()
+- [Source Code Hero](https://sourcecodehero.com/atm-program-in-python-with-source-code/) - The code for multi-user login was taken from this site. When I decided to build an ATM program , at first my program had one user login, then I thought it would be better if it had a multi-user login. So, I searched on Google and found this site.
+- [Learn Scratch Tutorials](https://www.youtube.com/watch?v=U1aUteSg2a4&list=WL&index=2&t=415s) - This YouTube video helps to learn how to use the **Pyfiglet** library for converting text to big ASCII text using Pyfiglet.
+- [Programiz](https://www.programiz.com/python-programming/exception-handling) - Helped me to apply Exception Handling using a try-except statement.
+- 
+- [Love Sandwiches](https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode) - This project was a great starting point for me.
+
+
+
+
 
 
 
