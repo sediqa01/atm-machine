@@ -124,6 +124,8 @@ def exit_system():
     """
     Exit System
     """
+    goodbye_message = pyfiglet.figlet_format('Thank You, Bye!')
+    print(goodbye_message)
     exit()
 
 
@@ -141,10 +143,10 @@ while True:
             4. Exit
             \nType the Number of Your Choices: """))
 
-        if response == '1':
+        if response == 1:
             display_balance()
 
-        elif response == '2':
+        elif response == 2:
             try:
                 amount = int(input("Enter Withdrawal Amount: "))
             except ValueError:
@@ -152,7 +154,7 @@ while True:
             else:
                 cash_withdraw(amount)
 
-        elif response == '3':
+        elif response == 3:
             try:
                 amount = int(input("Enter Deposit Amount: "))
             except ValueError:
@@ -160,7 +162,8 @@ while True:
             else:
                 cash_deposit(amount)
 
-        elif response == '4':
+        elif response == 4:
+            
             exit_system()
         else:
             raise ValueError('\n\n     Response is not Valid!\n')
