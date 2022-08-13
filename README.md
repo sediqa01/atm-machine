@@ -1,14 +1,16 @@
 # ATM SYSTEM - (Automated Teller Machine)
 
-This a computer-based program that makes managing a bank account’s funds simple. It enables users to check account balances, make cash withdrawals and deposits.
+This's a computer-based program, and it makes managing bank account funds very simple and conceivable. Through this, users would be able to check their account balances and make cash withdrawals or deposits.
 
-This Python Code For ATM Machine can run in console mode. It has a number of features, including Account Statement, Withdrawal, Depositing Amount. The user must first provide an existing username, and if the username matches, the system will proceed to the following step, which is to ask for a pin number. When a user completes all of these sign-in procedures, he or she will be able to utilize all of the capabilities. It’s far too simple to utilize; he or she can verify their own account statements.
+This ATM program can run in console mode. It has a number of features, including Account Statement, Withdrawal, Depositing Amount. 
+The link to the deployed program can be found here. : ![ATM Program]()
+
 
 ![header image](/readmefile/header.PNG)
 
 ## How To Use 
 
-
+The user must first provide an existing username, and if the username matches, the system will proceed to the next step, which is to ask for a pin number. When a user completes all of these sign-in procedures, they will be able to utilize all of the capabilities. It’s far too simple to utilize; they can verify their own account statements. When the user enters the system, if they want to check their account balance, they must enter "B." If they want to withdraw money, they must enter "W." Following that, they can insert the amount they wish to withdraw. If the user wants to deposit money, they must end with "D" and, following that, they can type the amount they intend to add to their account. Finally, they can exit from the system by clicking "E".
 
 ## Existing Feature
 
