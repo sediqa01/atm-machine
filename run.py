@@ -133,20 +133,18 @@ amount = None
 while True:
 
     try:
-        response = input("""
+        response = int(input("""
             Select From Following Options:
-            1. Check A/C Balance (B)
-            2. Cash Withdraw (W)
-            3. Cash Deposit (D)
-            4. Exit (E)
-            \nType the Letter of Your Choices: """).lower()
+            1. Check A/C Balance
+            2. Cash Withdraw
+            3. Cash Deposit
+            4. Exit
+            \nType the Number of Your Choices: """))
 
-        response = response.lower()
-
-        if response == 'b':
+        if response == '1':
             display_balance()
 
-        elif response == 'w':
+        elif response == '2':
             try:
                 amount = int(input("Enter Withdrawal Amount: "))
             except ValueError:
@@ -154,7 +152,7 @@ while True:
             else:
                 cash_withdraw(amount)
 
-        elif response == 'd':
+        elif response == '3':
             try:
                 amount = int(input("Enter Deposit Amount: "))
             except ValueError:
@@ -162,7 +160,7 @@ while True:
             else:
                 cash_deposit(amount)
 
-        elif response == 'e':
+        elif response == '4':
             exit_system()
         else:
             raise ValueError('\n\n     Response is not Valid!\n')
