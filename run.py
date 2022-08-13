@@ -70,17 +70,18 @@ while count <= 3:
                 print('\n\n     Invalid PIN!!')
                 print()
     else:
-        print('\n     PIN must Consists of 4 Digits.\n')
+        print('\nPIN must Consists of 4 Digits.\n')
         count += 1
 
 # If a user types an invalid password three times , the program will exit.
     if count == 3:
-        print('\n3 Unsuccesful PIN Attempts, EXITING')
+        print('\n 3 failed PIN attempts. EXITING ....')
+        print()
         exit()
 
 os.system('clear')
 
-print(str.capitalize(usernames[n]), 'Welcome to ATM!')
+print(str.capitalize(usernames[n]), ', Welcome to ATM!!')
 
 
 # Main menu
