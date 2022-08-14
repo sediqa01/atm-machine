@@ -28,22 +28,27 @@ ______
 2. **User Login** 
  Users can conduct transactions by verifying their own account statements; all user inputs are validated, and errors allow for multiple attempts to enter a valid username and password.
 
-- **User 1**
+**User 1**
+
 ![login](/readmefile/sediqalogin.PNG)
 
-- **User 2**
-![login](/readmefile/hadid.PNG.PNG)
+**User 2**
 
-- **Successful Login**
+![login](/readmefile/hadid.PNG)
+
+**Successful Login**
+
 ![login](/readmefile/successful_login.PNG)
 
 
-- **Invalid UserName & Password**
+**Invalid UserName & Password**
+
 ![login](/readmefile/invalid_username.PNG)
 ![login](/readmefile/invalid_password.PNG)
 
 
-- **Failed Login**
+**Failed Login**
+
 ![login](/readmefile/failedlogin.PNG)
 
 ______
@@ -52,6 +57,7 @@ ______
  This feature allows users to choose from the menu which transaction they would like to carry out. Users must be able to check their A/C balance and withdraw or deposit money into a certain account.
 
 ![login](/readmefile/successful_login.PNG)
+
 
 **Invalid User Input** 
 
@@ -73,12 +79,17 @@ ____________
  This feature allows users to withdraw the amount they wish. Here also, all user inputs are validated, and errors allow repeat opportunities to input a valid amount. For withdrawal, the user must enter an integer amount. This program does not accept float numbers for cash withdrawal. Furthermore, users cannot withdraw more than their balance.
 
 **Case1: Successful withdrawal**
+
 ![withdraw](/readmefile/withdraw.PNG)
 
+
 **Case2: Float numbers inputs**
+
 ![withdraw](/readmefile/float_withdraw.PNG)
 
+
 **Case3: Invalid User Input**
+
 ![withdraw](/readmefile/grater_withdraw.PNG)
 
 ___________________
@@ -87,14 +98,17 @@ ___________________
  This feature allows users to deposit the amount they wish. Here also, all user inputs are validated, and errors allow repeat opportunities to input a valid amount. Users can make deposits of more than ten dollars. This program does not accept float numbers for cash deposit.
 
 **Case1: Successful Deposit**
+
 ![Deposit](/readmefile/deposit.PNG)
 
 
 **Case2: Float numbers inputs**
+
 ![Deposit](/readmefile/float_deposit.PNG)
 
 
 **Case3: Invalid User Input**
+
 ![Deposit](/readmefile/small_deposit.PNG)
 
 _______________________
