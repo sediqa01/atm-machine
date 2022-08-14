@@ -28,23 +28,28 @@ ______
 2. **User Login** 
  Users can conduct transactions by verifying their own account statements; all user inputs are validated, and errors allow for multiple attempts to enter a valid username and password.
 
+
 **User 1**
 
 ![login](/readmefile/sediqalogin.PNG)
 
+
 **User 2**
 
 ![login](/readmefile/hadid.PNG)
+
 
 **Successful Login**
 
 ![login](/readmefile/successful_login.PNG)
 
 
+
 **Invalid UserName & Password**
 
 ![login](/readmefile/invalid_username.PNG)
 ![login](/readmefile/invalid_password.PNG)
+
 
 
 **Failed Login**
@@ -57,6 +62,7 @@ ______
  This feature allows users to choose from the menu which transaction they would like to carry out. Users must be able to check their A/C balance and withdraw or deposit money into a certain account.
 
 ![login](/readmefile/successful_login.PNG)
+
 
 
 **Invalid User Input** 
@@ -78,14 +84,17 @@ ____________
 5. **Withdraw**
  This feature allows users to withdraw the amount they wish. Here also, all user inputs are validated, and errors allow repeat opportunities to input a valid amount. For withdrawal, the user must enter an integer amount. This program does not accept float numbers for cash withdrawal. Furthermore, users cannot withdraw more than their balance.
 
+
 **Case1: Successful withdrawal**
 
 ![withdraw](/readmefile/withdraw.PNG)
 
 
+
 **Case2: Float numbers inputs**
 
 ![withdraw](/readmefile/float_withdraw.PNG)
+
 
 
 **Case3: Invalid User Input**
@@ -96,6 +105,7 @@ ___________________
 
 6. **Deposit**
  This feature allows users to deposit the amount they wish. Here also, all user inputs are validated, and errors allow repeat opportunities to input a valid amount. Users can make deposits of more than ten dollars. This program does not accept float numbers for cash deposit.
+
 
 **Case1: Successful Deposit**
 
@@ -115,7 +125,7 @@ _______________________
 
 
 4. **System Exit**
- If a user finishes a transaction, he/she can exit the system by entering 4 numbers.
+ If a user finishes a transaction, he/she can exit the system by clicking 4.
 
 ![exit](/readmefile/exit.PNG)
 
