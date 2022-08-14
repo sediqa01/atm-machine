@@ -20,58 +20,58 @@
 
 
 1. **Welcome Message**:
-[messge](/readmefile/header.PNG)
+![messge](/readmefile/header.PNG)
 
 
 2. **User Login** 
  Users can conduct transactions by verifying their own account statements; all user inputs are validated, and errors allow for multiple attempts to enter a valid username and password.
 
    - **User 1**
-[login](/readmefile/sediqalogin.PNG)
+![login](/readmefile/sediqalogin.PNG)
 
    - **User 2**
-[login](/readmefile/hadid.PNG.PNG)
+![login](/readmefile/hadid.PNG.PNG)
 
    - **Successful Login**
-[login](/readmefile/successful_login.PNG)
+![login](/readmefile/successful_login.PNG)
 
 
    - **Invalid UserName & Password**
-[login](/readmefile/invalid_username.PNG)
-[login](/readmefile/invalid_password.PNG)
+![login](/readmefile/invalid_username.PNG)
+![login](/readmefile/invalid_password.PNG)
 
 
   - **Failed Login**
-[login](/readmefile/failedlogin.PNG)
+![login](/readmefile/failedlogin.PNG)
 
 
 3. **Transaction Menu** 
  This feature allows users to choose from the menu which transaction they would like to carry out. Users must be able to check their A/C balance and withdraw or deposit money into a certain account.
 
-[login](/readmefile/successful_login.PNG)
+![login](/readmefile/successful_login.PNG)
 
    **Invalid User Input** 
-[login](/readmefile/wrong_response.PNG)
-[login](/readmefile/wrong_response2.PNG)
+![login](/readmefile/wrong_response.PNG)
+![login](/readmefile/wrong_response2.PNG)
 
 
 
 4. **Check A/C balance**
  This feature allows users to check the amount of balance they have on their account so they can make a valid transaction.
 
-[balance](/readmefile/balance.PNG)
+![balance](/readmefile/balance.PNG)
 
 5. **Withdraw**
  This feature allows users to withdraw the amount they wish. Here also, all user inputs are validated, and errors allow repeat opportunities to input a valid amount. For withdrawal, the user must enter an integer amount. This program does not accept float numbers for cash withdrawal. Furthermore, users cannot withdraw more than their balance.
 
    **Case1: Successful withdrawal**
-   [withdraw](/readmefile/withdraw.PNG)
+   ![withdraw](/readmefile/withdraw.PNG)
 
    **Case2: Float numbers inputs**
-   [withdraw](/readmefile/float_withdraw.PNG)
+   ![withdraw](/readmefile/float_withdraw.PNG)
 
    **Case3: Invalid User Input**
-   [withdraw](/readmefile/grater_withdraw.PNG)
+   ![withdraw](/readmefile/grater_withdraw.PNG)
 
 
 
@@ -80,20 +80,20 @@
  This feature allows users to deposit the amount they wish. Here also, all user inputs are validated, and errors allow repeat opportunities to input a valid amount. Users can make deposits of more than ten dollars. This program does not accept float numbers for cash deposit.
 
    **Case1: Successful Deposit**
-   [Deposit](/readmefile/deposit.PNG)
+   ![Deposit](/readmefile/deposit.PNG)
 
    **Case2: Float numbers inputs**
-   [Deposit](/readmefile/float_deposit.PNG)
+   ![Deposit](/readmefile/float_deposit.PNG)
 
    **Case3: Invalid User Input**
-   [Deposit](/readmefile/small_deposit.PNG)
+   ![Deposit](/readmefile/small_deposit.PNG)
 
 
 
 4. **System Exit**
  If a user finishes a transaction, he/she can exit the system by entering 4 numbers.
 
- [exit](/readmefile/exit.PNG)
+ ![exit](/readmefile/exit.PNG)
 
 
 
