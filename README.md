@@ -1,9 +1,7 @@
 # ATM SYSTEM - (Automated Teller Machine)
 
- This's a computer-based program, and it makes managing bank account funds very simple and conceivable. Through this, users would be able to check their account balances and make cash withdrawals or deposits.
 
- This ATM program can run in console mode. It has a number of features, including Account Statement, Withdrawal, Depositing Amount. 
- The link to the deployed program can be found here. : ![ATM Program]()
+This's a computer-based program, and it makes managing bank account funds very simple and conceivable. Through this program, users would be able to check their account balances, make cash withdrawals, and make deposits. This ATM program can run in console mode. It has a number of features, including Account Statement, Withdrawal, and Depositing Amount. The link to the deployed program can be found here: ![ATM Program]()
 
 
 ![header image](/readmefile/header.PNG)
@@ -11,7 +9,8 @@
 
 ## How To Use 
 
- The user must first provide an existing username, and if the username matches, the system will proceed to the next step, which is to ask for a pin number. When a user completes all of these sign-in procedures, they will be able to utilize all of the capabilities. It’s far too simple to utilize; they can verify their own account statements. When the user enters the system, if they want to check their account balance, they must enter "1" If they want to withdraw money, they must enter "2" Following that, they can insert the amount they wish to withdraw. If the user wants to deposit money, they must end with "3" and, following that, they can type the amount they intend to add to their account. Finally, they can exit from the system by clicking "4".
+The user must first provide an existing username, and if the username matches, the system will proceed to the next step, which asks for a pin number. When a user completes all of these sign-in procedures, they will be able to utilize all of the capabilities. It’s far too simple to utilize; they can verify their own account statements. When the user enters the system, if they want to check their account balance, they must enter "1". If they want to withdraw money, they must enter "2." Following that, they can insert the amount they wish to withdraw. If the user wants to deposit money, they must end with "3" and, following that, they can type the amount they intend to add to their account. Finally, they can exit from the system by clicking "4".
+
 
 
 ## Features
@@ -134,7 +133,7 @@ _______________________
 ## Testing
 
 I have tested this project by doing the following :
-- Passed the code through a PEP8 linter and confirmed there are no problems.
+- Passed the code through a PEP8 linter and confirmed there is no problems.
 - I performed the tests by entering wrong inputs to check  the OK and the not OK paths.
 - Tested in my Gitpod local terminal.
 
@@ -145,7 +144,7 @@ I have tested this project by doing the following :
 
 ### Solved Bugs
 
-1. When I tested the program, I realized that in the message requesting the responses from the user, I had set a character for each responses, which is not correct in terms of the user experience, because the ATM system uses responses to request the responses from the user. So, I have determined the numbers for the user's responses.
+1. When I tested the program, I realized that in the message requesting the response from the user, I had set a character for each responses, which is not correct in terms of the user experience, because the ATM system uses responses to request the responses from the user. So, I have determined the numbers for the user's responses.
 
 ![User Responses](/readmefile/debug.PNG)
 
@@ -177,8 +176,8 @@ I used these python libraries :
 
 - **Pyfiglet** - To create a header & Goodbye Message.
 - **OS** - to clear the system after user login.
-- **Time** - To add the sleep() function to the delay the terminal for simulating Insert card.
 - **String** - To capitalize the usernames.
+- **Time** - To add the sleep() function to make a delay in the terminal for simulating the insert card.
 
 
 
