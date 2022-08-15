@@ -179,6 +179,7 @@ I used these python libraries :
 - **String** - To capitalize the usernames.
 - **Time** - To add the sleep() function to make a delay in the terminal for simulating the insert card.
 
+**Note:** I have installed the termcolor library and imported it into my program to color the code in the terminal , but when I applied I noticed that there was no sign that text has color , so I changed my mind and deleted the import library.
 
 
 ## Deployment
