@@ -1,10 +1,15 @@
 # ATM SYSTEM - (Automated Teller Machine)
 
 
-This's a computer-based program, and it makes managing bank account funds very simple and conceivable. Through this program, users would be able to check their account balances, make cash withdrawals, and make deposits. This ATM program can run in console mode. It has a number of features, including Account Statement, Withdrawal, and Depositing Amount. The link to the deployed program can be found here: ![ATM Program]()
+This's a computer-based program, and it makes managing bank account funds very simple and conceivable. Through this program, users would be able to check their account balances, make cash withdrawals, and make deposits. This ATM program can run in console mode. It has a number of features, including Account Statement, Withdrawal, and Depositing Amount. The link to the deployed program can be found here: [ATM Program](https://atm-system.herokuapp.com/)
 
 
-![header image](/readmefile/header.PNG)
+![image](/readmefile/run_program.PNG)
+
+
+**Note:**  Due to the nature of the programme, it is not suitable for mobile phones and smaller devices.
+
+![image](/readmefile/responsive.PNG)
 
 
 ## How To Use 
