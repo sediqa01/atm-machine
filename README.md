@@ -192,11 +192,17 @@ I used these python libraries :
 The project was deployed using Code Institute's mock terminal for Heroku.
 
 Steps for deployment:
-- Fork or clone this repository.
-- Create a new Heroku app.
-- Set the buildbacks to python and NodeJS in that order.
-- Link the Heroku app to the respository.
-- Click on Deploy.
+1. Click "New" and select "Create new app".
+2. Input a meaningful name for your app and choose the region best suited to your location.
+3. Select "Settings" from the tabs.
+4. Set the buildbacks to python and NodeJS in that order.
+5. Select "Deploy" from the tabs.
+6. Link the Heroku app to the respository.
+7. Select "GitHub - Connect to GitHub" from deployment methods.
+8. Search for the GitHub repository by name.
+9. Either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
+10. Click on Deploy.
+11. Click View button to view the deployed site.
 
 ### Credits
 
