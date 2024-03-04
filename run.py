@@ -9,7 +9,7 @@ print("\n\nPlease Insert Your Card!\n\n\n")
 time.sleep(2)
 
 # ATM (Automated Teller Machine)
-header = pyfiglet.figlet_format(" Wlecome  to ATM ")
+header = pyfiglet.figlet_format(" Welcome  to ATM ")
 print(header)
 
 # Creating user's information for login
@@ -18,7 +18,7 @@ The code for multi-user login was taken from this site [Source Code Hero]
 (https://sourcecodehero.com/atm-program-in-python-with-source-code/)
 """
 
-usernames = ['sediqa', 'hadid', 'sadat', 'saida']
+usernames = ['user1', 'user2', 'user3', 'user4']
 passwords = ['0001', '0002', '0003', '0004']
 amounts = [10000, 20000, 30000, 4000]
 count = 0
@@ -46,7 +46,7 @@ while count <= 3:
     pin = input('Please Enter Your PIN: ')
 
     if pin.isdigit():
-        if user == 'sediqa':
+        if user == 'user1':
             if pin == passwords[0]:
                 break
             else:
@@ -54,7 +54,7 @@ while count <= 3:
                 print('\n\n     Invalid PIN!!')
                 print()
 
-        if user == 'hadid':
+        if user == 'user2':
             if pin == passwords[1]:
                 break
             else:
@@ -62,7 +62,7 @@ while count <= 3:
                 print('\n\n     Invalid PIN!!')
                 print()
 
-        if user == 'sadat':
+        if user == 'user3':
             if pin == passwords[2]:
                 break
             else:
